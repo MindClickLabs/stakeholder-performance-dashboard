@@ -522,7 +522,7 @@ class Component extends DCLogic {
     const opt = (i) => ({ key: String(i), label: D.stk[i][0] + ' · ' + new Set(D.stk[i][3].map((id) => D.rows[id][0])).size + ' proj.' });
     const ATTEND = new Set(['Studio 3877', 'DLR', 'Gensler', 'Arcadis', 'Hirsch Bedner Associates (HBA)', 'JCJ Architecture', 'RSP Architect',
       'BW Hotel Group (BWH or Best Western)', 'Benjamin West', 'Hilton Supply Management', 'HPC', 'Summa International', 'Looney & Associates',
-      'Marriott International', 'ZDS Architecture']);
+      'Marriott International', 'ZDS Architecture', 'Harken Interiors']);
     const byName = (a, b) => D.stk[a][0].localeCompare(D.stk[b][0]);
     const projOpts = PROJ_PICKS.map((x) => ({ key: 'p:' + x.pi, label: x.label }));
     const stkOpts = {
